@@ -4,7 +4,7 @@ const message = document.getElementById("message")
 const form = document.querySelector("form")
 const chatBox = document.querySelector(".chat-box")
 
-const socket = io("ws://localhost:8080")
+const socket = io()
 
 socket.on("message", (msg) => {
   const el = document.createElement("div")
