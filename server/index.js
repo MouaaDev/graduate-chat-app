@@ -7,8 +7,7 @@ const io = require("socket.io")(httpServer, {
   cors: { origin: "*" },
 })
 
-app.use(express.static(path.join(__dirname, "client")))
-
+app.use(express.static(path.join(__dirname, "../client")))
 io.on("connection", (socket) => {
   console.log("a user connected")
 
