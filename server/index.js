@@ -3,9 +3,7 @@ const app = express()
 const httpServer = require("http").createServer(app)
 const path = require("path")
 
-const io = require("socket.io")(httpServer, {
-  cors: { origin: "*" },
-})
+const io = require("socket.io")(httpServer)
 
 app.use(express.static(path.join(__dirname, "../client")))
 io.on("connection", (socket) => {
