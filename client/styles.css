@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  color: rgb(235, 235, 235);
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+.chat-box {
+  background-color: #424242;
+  padding: 1rem;
+  height: 100%;
+  overflow: scroll;
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.message-box span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b4b4b4;
+  margin-bottom: 5px;
+}
+
+.message-box p {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  font-family: inherit;
+  border-radius: 5px;
+  border: 0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  justify-self: flex-end;
+  border: 0;
+  border-radius: 5px;
+}
+
+.message-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.message-send input {
+  width: 100%;
+  margin-right: 5px;
+}

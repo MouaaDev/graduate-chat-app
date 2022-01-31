@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chat Messages App</title>
+    <script
+      src="https://cdn.socket.io/4.4.1/socket.io.min.js"
+      integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat-box">
+        <!-- Here goes the messages -->
+      </div>
+      <form>
+        <input
+          type="text"
+          class="username"
+          id="username"
+          placeholder="Your name"
+          required
+        />
+        <div class="message-send">
+          <input
+            type="text"
+            class="message"
+            id="message"
+            placeholder="Message"
+          />
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
